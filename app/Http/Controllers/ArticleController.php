@@ -31,6 +31,6 @@ class ArticleController extends Controller
     public function delete(Article $article)
     {
         $article -> delete();
-        retund response() -> json(null, 204);
+        return response() -> json(null, 204);
     }
 }
