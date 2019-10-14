@@ -10,7 +10,15 @@ class MovieController extends Controller
 {
     public function all()
     {
-        return Movie::all();
+        return response() -> json(Movie::select('id','title')->get(), 200);
+    }
+
+    public function search(Request $request)
+    {
+        $search_text = $request->search_text;
+        $results = Movie::where('title', 'like', '%'.$search_text.'%') ->
+        orWhere('actors', 'like', '%'.$search_text.'%') -> get();
+        return response() -> json($results, 200);
     }
     public function show(Movie $movie)
     {

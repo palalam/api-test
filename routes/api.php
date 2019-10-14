@@ -5,10 +5,12 @@ use Illuminate\Http\Request;
 
 Route::get('movies', 'MovieController@all');
 Route::get('movies/{movie}', 'MovieController@show');
+Route::get('search', 'MovieController@search');
+
 Route::group(['middleware' => 'auth:api'], function() {
 
     Route::post('movies', 'MovieController@store');
-    Route::put('movies/{movie}', 'MovieController@update');
+    Route::patch('movies/{movie}', 'MovieController@update');
     Route::delete('movies/{movie}', 'MovieController@delete');
 
 });
