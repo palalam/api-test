@@ -2,14 +2,15 @@
 
 use Illuminate\Http\Request;
 
-Use App\Article;
 
+Route::get('movies', 'MovieController@all');
+Route::get('movies/{movie}', 'MovieController@show');
 Route::group(['middleware' => 'auth:api'], function() {
-    Route::get('articles', 'ArticleController@index');
-    Route::get('articles/{article}', 'ArticleController@show');
-    Route::post('articles', 'ArticleController@store');
-    Route::put('articles/{article}', 'ArticleController@update');
-    Route::delete('articles/{article}', 'ArticleController@delete');
+
+    Route::post('movies', 'MovieController@store');
+    Route::put('movies/{movie}', 'MovieController@update');
+    Route::delete('movies/{movie}', 'MovieController@delete');
+
 });
 
 Route::post('register', 'Auth\RegisterController@register');
