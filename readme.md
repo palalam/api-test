@@ -56,10 +56,11 @@ HTTP Заголовки: <br>
 | password  | Ваш пароль  |
 
 HTTP Заголовки: <br>
+
 | Заголовок  |          Значение |
 | ------------- | ------------- |
-| Accept | application/json  |
-| Content-Type | application/json  |
+| Accept  | application/json  |
+| Content-Type  | application/json  |
 
 Пример ответа:
 
@@ -89,10 +90,11 @@ HTTP Заголовки: <br>
 | api_token  | fMll78bBYLbwQhzB7fJ69pvzwt75VkZLNUMEmx4MowCdIpMdLii8LduNCBKH  |
 
 HTTP Заголовки: <br>
+
 | Заголовок  |          Значение |
 | ------------- | ------------- |
-| Accept | application/json  |
-| Content-Type | application/json  |
+| Accept  | application/json  |
+| Content-Type  | application/json  |
 
 Пример ответа:
 
@@ -106,10 +108,11 @@ HTTP Заголовки: <br>
 Для получения списка всех фильмов отправляется GET запрос по ссылке<br>
 `http://<YOU_URL>/api/movies` <br>
 HTTP Заголовки: <br>
+
 | Заголовок  |          Значение |
 | ------------- | ------------- |
-| Accept | application/json  |
-| Content-Type | application/json  |
+| Accept  | application/json  |
+| Content-Type  | application/json  |
 
 Пример ответа:
 
@@ -151,16 +154,19 @@ HTTP Заголовки: <br>
 `http://<YOU_URL>/api/search` <br>
 
 При этом в параметре search_text указываем слово для поиска<br>
+
 | Параметр  |          Значение |
 | ------------- | ------------- |
 | search_text  | Сэм Уортингтон  |
 
 
 HTTP Заголовки: <br>
+
 | Заголовок  |          Значение |
 | ------------- | ------------- |
-| Accept | application/json  |
-| Content-Type | application/json  |
+| Accept  | application/json  |
+| Content-Type  | application/json  |
+
 
 Пример ответа:
 
@@ -182,8 +188,10 @@ HTTP Заголовки: <br>
 
 Для добавления фильма отправляется POST запрос по ссылке<br>
 `http://<YOU_URL>/api/movies` <br>
-Параметры:
-| Параметр  |          Значение |
+
+Параметры:<br>
+
+| Параметр  |  Значение   |
 | ------------- | ------------- |
 | title  | Джокер |
 | year  | 2019 |
@@ -191,11 +199,15 @@ HTTP Заголовки: <br>
 | actors  | Хоакин Феникс |
 | api_token  | fMll78bBYLbwQhzB7fJ69pvzwt75VkZLNUMEmx4MowCdIpMdLii8LduNCBKH  |
 
+
+
+
 HTTP Заголовки: <br>
+
 | Заголовок  |          Значение |
 | ------------- | ------------- |
-| Accept | application/json  |
-| Content-Type | application/json  |
+| Accept  | application/json  |
+| Content-Type  | application/json  |
 
 Пример ответа:
 
@@ -216,6 +228,7 @@ HTTP Заголовки: <br>
 Для редактирования фильма отправляется PATCH запрос по ссылке с указанием ID фильма <br>
 `http://<YOU_URL>/api/movies/6` <br>
 Параметры:
+
 | Параметр  |          Значение |
 | ------------- | ------------- |
 | title  | Джокер |
@@ -225,6 +238,7 @@ HTTP Заголовки: <br>
 | api_token  | fMll78bBYLbwQhzB7fJ69pvzwt75VkZLNUMEmx4MowCdIpMdLii8LduNCBKH  |
 
 HTTP Заголовки: <br>
+
 | Заголовок  |          Значение |
 | ------------- | ------------- |
 | Accept | application/json  |
@@ -248,11 +262,13 @@ HTTP Заголовки: <br>
 Для удаления фильма отправляется DELETE запрос по ссылке с указанием ID фильма<br>
 `http://<YOU_URL>/api/movies/6` <br>
 Параметры:
+
 | Параметр  |          Значение |
 | ------------- | ------------- |
 | api_token  | fMll78bBYLbwQhzB7fJ69pvzwt75VkZLNUMEmx4MowCdIpMdLii8LduNCBKH  |
 
 HTTP Заголовки: <br>
+
 | Заголовок  |          Значение |
 | ------------- | ------------- |
 | Accept | application/json  |
